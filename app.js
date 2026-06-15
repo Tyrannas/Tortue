@@ -202,6 +202,56 @@ function goTopics()    { showScreen("topics"); }
 function goAbout()     { showScreen("about"); }
 function replayTopic() { startTopic(state.topicIdx); }
 
+/* PARTAGE — lien direct vers une réponse.
+   Format du fragment : #<id-du-sujet>/<index-de-l-argument>. */
+function responseUrl(topicId, argIdx) {
+  return location.origin + location.pathname +
+         "#" + encodeURIComponent(topicId) + "/" + argIdx;
+}
+
+async function shareResponse() {
+  if (state.topicIdx == null || state.selected == null) return;
+  const topic = TOPICS[state.topicIdx];
+  const url   = responseUrl(topic.id, state.selected);
+  const btn   = $("resp-share");
+
+  try {
+    await navigator.clipboard.writeText(url);
+  } catch (e) {
+    // Repli pour les navigateurs sans accès au presse-papier.
+    const ta = document.createElement("textarea");
+    ta.value = url;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (_) {}
+    document.body.removeChild(ta);
+  }
+
+  const prev = btn.textContent;
+  btn.textContent = "Lien copié !";
+  btn.classList.add("copied");
+  clearTimeout(btn._t);
+  btn._t = setTimeout(() => {
+    btn.textContent = prev;
+    btn.classList.remove("copied");
+  }, 2000);
+}
+
+/* Ouvre directement la réponse désignée par le fragment d'URL, le cas échéant. */
+function openFromHash() {
+  const m = location.hash.match(/^#([^/]+)\/(\d+)$/);
+  if (!m) return false;
+  const topicId = decodeURIComponent(m[1]);
+  const argIdx  = parseInt(m[2], 10);
+  const ti = TOPICS.findIndex(t => t.id === topicId);
+  if (ti === -1 || !TOPICS[ti].args[argIdx]) return false;
+  startTopic(ti);
+  selectArg(argIdx);
+  return true;
+}
+
 /* SOURCES — liste de référence affichée sur la page « À propos ». */
 function hostLabel(url) {
   try { return new URL(url).hostname.replace(/^www\./, ""); }
@@ -218,5 +268,6 @@ async function loadSources() {
   ).join("");
 }
 
-loadTopics();
+loadTopics().then(openFromHash);
 loadSources();
+window.addEventListener("hashchange", openFromHash);

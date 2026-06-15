@@ -55,7 +55,10 @@
         <div class="resp-counter" id="resp-counter"></div>
         <div class="resp-text"   id="resp-text"></div>
         <div class="resp-sources" id="resp-sources"></div>
-        <a class="resp-edit" id="resp-edit" target="_blank" rel="noopener">Modifier sur GitHub</a>
+        <div class="resp-actions">
+          <button class="resp-share" id="resp-share" onclick="shareResponse()">Partager cette réponse</button>
+          <a class="resp-edit" id="resp-edit" target="_blank" rel="noopener">Modifier sur GitHub</a>
+        </div>
       </div>
     </div>
     <button class="btn-continue" id="btn-continue" onclick="continueDebate()">Argument suivant</button>
@@ -79,7 +82,7 @@
     <h1 class="page-title">À propos</h1>
 
     <div class="about-block">
-      <p>Ce site n'est aucunement affilié à La France Insoumise. Il s'agit d'une initiative strictement personnelle, sans lien officiel avec le mouvement ni avec ses représentants.</p>
+      <p>Ce site n'est aucunement affilié à La France Insoumise. Il s'agit d'une initiative strictement personnelle, sans lien officiel avec le mouvement ni avec ses représentants. J'ai juste honteusement copié leur charte graphique.</p>
       <p>Les contenus présentés peuvent contenir des erreurs, des imprécisions ou des informations devenues obsolètes. Ils ne constituent en aucun cas une parole officielle.</p>
       <p>Le simulateur repose sur un système basique de questions et de réponses déjà rédigées à l'avance. Il ne génère rien de manière automatique et se contente d'afficher des échanges écrits au préalable.</p>
       <p>Chacun est libre de proposer des corrections ou des améliorations en ouvrant une pull request sur le dépôt GitHub du projet.</p>
