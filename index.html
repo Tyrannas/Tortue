@@ -10,10 +10,15 @@
 <body>
 
 <header class="site-header">
-  <span class="turtle-icon">&#x1F422;</span>
-  <div class="brand-text"><em>L'avenir</em> en commun</div>
-  <div class="hdr-sep"></div>
-  <div class="hdr-sub">Simulateur de débat</div>
+  <a class="brand-link" href="#" onclick="goTopics(); return false;" aria-label="Retour à l'accueil">
+    <span class="turtle-icon">&#x1F422;</span>
+    <div class="brand-text"><em>L'avenir</em> en commun</div>
+    <div class="hdr-sep"></div>
+    <div class="hdr-sub">Simulateur de débat</div>
+  </a>
+  <nav class="hdr-nav">
+    <a href="#" class="hdr-about-link" onclick="goAbout(); return false;">À propos</a>
+  </nav>
 </header>
 
 <div id="screen-topics" class="screen active">
@@ -50,6 +55,7 @@
         <div class="resp-counter" id="resp-counter"></div>
         <div class="resp-text"   id="resp-text"></div>
         <div class="resp-sources" id="resp-sources"></div>
+        <a class="resp-edit" id="resp-edit" target="_blank" rel="noopener">Modifier sur GitHub</a>
       </div>
     </div>
     <button class="btn-continue" id="btn-continue" onclick="continueDebate()">Argument suivant</button>
@@ -64,6 +70,24 @@
         <button class="btn-other"  onclick="goTopics()">Autre sujet</button>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="screen-about" class="screen">
+  <div class="wrap">
+    <p class="page-eyebrow">Informations</p>
+    <h1 class="page-title">À propos</h1>
+
+    <div class="about-block">
+      <p>Ce site n'est aucunement affilié à La France Insoumise. Il s'agit d'une initiative strictement personnelle, sans lien officiel avec le mouvement ni avec ses représentants.</p>
+      <p>Les contenus présentés peuvent contenir des erreurs, des imprécisions ou des informations devenues obsolètes. Ils ne constituent en aucun cas une parole officielle.</p>
+      <p>Le simulateur repose sur un système basique de questions et de réponses déjà rédigées à l'avance. Il ne génère rien de manière automatique et se contente d'afficher des échanges écrits au préalable.</p>
+      <p>Chacun est libre de proposer des corrections ou des améliorations en ouvrant une pull request sur le dépôt GitHub du projet.</p>
+      <p><a class="about-gh" href="https://github.com/Tyrannas/Tortue" target="_blank" rel="noopener">Voir le dépôt sur GitHub</a></p>
+    </div>
+
+    <h2 class="about-subtitle">Sources utilisées</h2>
+    <ul class="about-sources" id="about-sources"></ul>
   </div>
 </div>
 

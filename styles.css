@@ -33,6 +33,36 @@ body {
   gap: 16px;
 }
 
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px 8px;
+  margin: -6px -8px;
+  transition: background .15s;
+}
+.brand-link:hover { background: var(--purple-pale); }
+
+.hdr-nav { margin-left: auto; }
+
+.hdr-about-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: 2px solid var(--border);
+  transition: border-color .2s, color .2s, background .2s;
+}
+.hdr-about-link:hover { border-color: var(--purple); color: #fff; background: var(--purple); }
+
 .turtle-icon {
   font-size: 1.6rem;
   filter: hue-rotate(180deg) saturate(2.2) brightness(0.85);
@@ -349,6 +379,24 @@ body {
   text-decoration-color: var(--red);
 }
 
+/* Lien « Modifier sur GitHub » en bas de réponse */
+.resp-edit {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .15s;
+}
+.resp-edit::before { content: "\270E"; font-size: 0.85rem; }
+.resp-edit:hover { color: var(--purple); }
+
 /* Continue button */
 .btn-continue {
   display: none;
@@ -437,6 +485,73 @@ body {
   transition: border-color .2s, color .2s, background .2s;
 }
 .btn-other:hover { border-color: var(--purple); color: var(--white); background: var(--purple); }
+
+/* ABOUT */
+.about-block {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 18px;
+  padding: 26px 28px;
+  margin-bottom: 40px;
+}
+.about-block p {
+  color: var(--text-light);
+  font-size: 0.92rem;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+.about-block p:last-child { margin-bottom: 0; }
+
+.about-gh {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--purple);
+  text-decoration: none;
+  border-bottom: 2px solid var(--purple-light);
+  padding-bottom: 1px;
+  transition: color .15s, border-color .15s;
+}
+.about-gh:hover { color: var(--red); border-color: var(--red); }
+
+.about-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--purple);
+  margin-bottom: 16px;
+}
+
+.about-sources { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.about-sources li {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  transition: border-color .18s, box-shadow .18s;
+}
+.about-sources li:hover {
+  border-color: var(--purple-light);
+  box-shadow: 0 6px 18px rgba(107,25,201,0.1);
+}
+.about-sources a {
+  display: block;
+  padding: 14px 18px;
+  text-decoration: none;
+}
+.about-sources .src-host {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--purple);
+  margin-bottom: 3px;
+}
+.about-sources .src-url {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
 
 @media (max-width: 520px) {
   .topics-grid { grid-template-columns: 1fr 1fr; }

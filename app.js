@@ -1,6 +1,52 @@
 /* DONNÉES — chargées depuis les fichiers JSON du dossier questions/ */
 let TOPICS = [];
 
+/* DÉPÔT GITHUB — base des liens « Modifier sur GitHub ».
+   L'arborescence du dépôt est identique à celle de ce dossier. */
+const GITHUB_REPO   = "https://github.com/Tyrannas/Tortue";
+const GITHUB_BRANCH = "main";
+
+/* Construit l'URL d'édition pointant vers la ligne de début de l'argument. */
+function editUrl(topic, arg) {
+  return `${GITHUB_REPO}/blob/${GITHUB_BRANCH}/questions/${topic._file}#L${arg._line}`;
+}
+
+/* Repère, dans le texte brut d'un fichier topic, le numéro de ligne du « { »
+   qui ouvre chaque objet du tableau "args". Renvoie un tableau de lignes (1-based)
+   dans l'ordre des arguments. */
+function computeArgLines(raw) {
+  const lines = [];
+  const argsKeyIdx = raw.indexOf('"args"');
+  let inStr = false, esc = false, line = 1;
+  let foundArgs = false, argsArrayDepth = -1;
+  const stack = [];
+  for (let i = 0; i < raw.length; i++) {
+    const c = raw[i];
+    if (c === "\n") { line++; continue; }
+    if (inStr) {
+      if (esc)            esc = false;
+      else if (c === "\\") esc = true;
+      else if (c === '"')  inStr = false;
+      continue;
+    }
+    if (c === '"') { inStr = true; }
+    else if (c === "[" || c === "{") {
+      if (!foundArgs && c === "[" && argsKeyIdx !== -1 && i > argsKeyIdx) {
+        foundArgs = true;
+        argsArrayDepth = stack.length;
+      } else if (foundArgs && c === "{" &&
+                 stack.length === argsArrayDepth + 1 &&
+                 stack[stack.length - 1] === "[") {
+        lines.push(line);
+      }
+      stack.push(c);
+    } else if (c === "]" || c === "}") {
+      stack.pop();
+    }
+  }
+  return lines;
+}
+
 /* STATE */
 let state = { topicIdx: null, remaining: [], selected: null, answered: false };
 
@@ -8,7 +54,7 @@ let state = { topicIdx: null, remaining: [], selected: null, answered: false };
 const $ = id => document.getElementById(id);
 
 function showScreen(name) {
-  ["topics","debate"].forEach(n => {
+  ["topics","debate","about"].forEach(n => {
     $("screen-" + n).classList.toggle("active", n === name);
   });
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -18,7 +64,14 @@ function showScreen(name) {
 async function loadTopics() {
   const files = await fetch("questions/index.json").then(r => r.json());
   TOPICS = await Promise.all(
-    files.map(f => fetch("questions/" + f).then(r => r.json()))
+    files.map(async f => {
+      const raw   = await fetch("questions/" + f).then(r => r.text());
+      const topic = JSON.parse(raw);
+      topic._file = f;
+      const argLines = computeArgLines(raw);
+      topic.args.forEach((a, j) => { a._line = argLines[j]; });
+      return topic;
+    })
   );
   renderTopics();
 }
@@ -118,6 +171,15 @@ function selectArg(idx) {
     srcEl.innerHTML = "";
     srcEl.style.display = "none";
   }
+
+  const editEl = $("resp-edit");
+  if (arg._line) {
+    editEl.href = editUrl(topic, arg);
+    editEl.style.display = "inline-flex";
+  } else {
+    editEl.style.display = "none";
+  }
+
   const resp = $("lfi-response");
   resp.classList.remove("show");
   void resp.offsetWidth;
@@ -137,6 +199,24 @@ function continueDebate() {
 
 /* NAV */
 function goTopics()    { showScreen("topics"); }
+function goAbout()     { showScreen("about"); }
 function replayTopic() { startTopic(state.topicIdx); }
 
+/* SOURCES — liste de référence affichée sur la page « À propos ». */
+function hostLabel(url) {
+  try { return new URL(url).hostname.replace(/^www\./, ""); }
+  catch (e) { return url; }
+}
+
+async function loadSources() {
+  const urls = await fetch("sources.json").then(r => r.json());
+  $("about-sources").innerHTML = urls.map(url =>
+    `<li><a href="${url}" target="_blank" rel="noopener">
+       <span class="src-host">${hostLabel(url)}</span>
+       <span class="src-url">${url}</span>
+     </a></li>`
+  ).join("");
+}
+
 loadTopics();
+loadSources();
