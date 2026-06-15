@@ -1,0 +1,92 @@
+{
+  "id": "retraites",
+  "emoji": "👴",
+  "name": "Retraite à 60 ans",
+  "desc": "LFI face aux arguments contre son projet de retour à la retraite à 60 ans.",
+  "endText": "LFI articule un financement basé sur la redistribution des revenus du capital et la création d'emplois écologiques. Ses adversaires contestent l'arithmétique et redoutent les effets macroéconomiques a court terme.",
+  "args": [
+    {
+      "label": "Argument démographique",
+      "text": "C'est démographiquement impossible : il n'y aura bientôt que 1,5 actif pour 1 retraité en 2050. Le système s'effondre de lui-même.",
+      "counter": "La démographie n'est pas une fatalité",
+      "response": "La productivité d'un travailleur français a triplé en cinquante ans<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup> : ce qui compte n'est pas le nombre brut d'actifs, mais la richesse produite par tête. La part du PIB consacrée aux retraites est d'ailleurs déjà passée de 7 % à 14 % entre 1980 et aujourd'hui<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>, sans effondrement économique. Le ratio actifs/retraités sert d'écran de fumée pour imposer l'austérité : on peut parfaitement financer plus de retraités avec des travailleurs plus productifs. La planification écologique créera par ailleurs des centaines de milliers d'emplois nouveaux — 400 000 dans les renouvelables, 200 000 à 300 000 dans l'agriculture relocalisée<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup> — augmentant d'autant la masse des cotisants.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (p. 8 et 32)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" }
+      ]
+    },
+    {
+      "label": "Argument budgétaire",
+      "text": "Selon le COR, cela coûterait 40 milliards d'euros supplémentaires par an. Une facture colossale et irréaliste.",
+      "counter": "L'argent existe, il est chez les actionnaires",
+      "response": "Chaque année, les actionnaires s'approprient plus de 150 milliards d'euros, soit 8 points de PIB<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup> : les dividendes ont triplé depuis 1980 (on travaillait alors deux semaines par an pour les actionnaires, contre plus de six aujourd'hui). Il ne faut que 2 points de PIB supplémentaires étalés sur 20 ans. Les leviers sont chiffrés : déplafonnement de la cotisation à 2,3 % (≈ 4,4 Mds), cotisation plafonnée portée à 15,45 % (plus de 20 Mds/an), 24 Mds annuels via la CADES dès 2024, 5 Mds par l'égalité salariale femmes-hommes, 5 Mds par la suppression des niches fiscales de la loi PACTE, et 130 Mds de réserves déjà disponibles dans le Fonds de réserve des retraites<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Ce n'est pas un problème de moyens, c'est un choix politique.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (« Financer nos retraites », p. 31-33)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" }
+      ]
+    },
+    {
+      "label": "Argument emploi",
+      "text": "Repousser l'âge légal créerait 200 000 a 240 000 emplois selon le COR. L'abaisser ferait l'inverse.",
+      "counter": "Des emplois sur le dos de seniors déjà exclus",
+      "response": "Aujourd'hui, 360 000 personnes de plus de 60 ans sont déjà au chômage, et 40 % des 50-62 ans sont sans emploi ou en arrêt maladie<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Les maintenir de force en activité n'ouvre aucun poste : cela engorge le marché au détriment des jeunes et alourdit les dépenses d'assurance-chômage et de minima sociaux. La vraie création d'emplois passe par la planification écologique : 100 000 emplois verts représentent à eux seuls 1,3 milliard d'euros de cotisations supplémentaires<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Porter au SMIC le million de salariés qui gagnent aujourd'hui moins de 855 € par mois rapporterait, de même, des centaines de millions à la branche vieillesse<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (p. 14 et 32)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" }
+      ]
+    },
+    {
+      "label": "Niveau de dépenses",
+      "text": "La France consacre déjà 14 % du PIB aux retraites, le taux le plus élevé d'Europe. On ne peut aller plus loin.",
+      "counter": "14 % du PIB, et alors ?",
+      "response": "La part du PIB consacrée aux retraites est passée de 7 % à 14 % entre 1980 et aujourd'hui<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>, sans catastrophe économique. Et ce chiffre est trompeur : une fois la retraite par capitalisation des autres pays prise en compte, la France dépense environ 13 % du PIB, un niveau comparable aux autres pays développés qui externalisent le reste vers des fonds de pension privés<sup class='cite'><a href='https://elucid.media/analyse-graphique/modele-social-francais' target='_blank' rel='noopener'>2</a></sup>. Les retraités représentent désormais plus de 20 % de la population et reçoivent donc mécaniquement moins que leur poids démographique. Passer à 16 % du PIB d'ici 2040 est parfaitement soutenable pour un système qui distribue déjà plus de 300 milliards d'euros<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Emmanuel Macron lui-même écrivait en 2017 que « le problème des retraites n'est plus un problème financier »<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (p. 8-9 et 31)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" },
+        { "n": 2, "text": "Elucid — « Le modèle social français » (part des retraites dans le PIB, comparaison internationale)", "url": "https://elucid.media/analyse-graphique/modele-social-francais" }
+      ]
+    },
+    {
+      "label": "Levier insuffisant",
+      "text": "Taxer les revenus financiers ne rapporterait que 8 milliards, loin des 40 milliards nécessaires.",
+      "counter": "C'est un levier parmi une dizaine d'autres",
+      "response": "LFI ne mise jamais sur un seul levier. Le plan combine : jusqu'à 8 Mds en étendant la cotisation déplafonnée de 2,3 % aux revenus financiers des entreprises, environ 5 Mds par point de cotisation vieillesse (LFI propose +1,25 point pour porter le taux à 19 %), 5 Mds par l'égalité salariale femmes-hommes, 5 Mds par la suppression des niches fiscales de la loi PACTE, 24 Mds annuels via la CADES dès 2024, et 130 Mds de réserves mobilisables immédiatement<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Or le COR estime le besoin de financement du système actuel à « une dizaine de milliards à l'horizon 2025 »<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup> : l'arithmétique tient largement, à condition d'accepter de reprendre de l'argent au capital.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (« Financer nos retraites », p. 31-34)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" }
+      ]
+    },
+    {
+      "label": "Destruction d'emplois",
+      "text": "Augmenter les cotisations salariales détruirait entre 20 000 et 30 000 emplois selon les experts du COR.",
+      "counter": "Couplée aux hausses salariales, la hausse est indolore",
+      "response": "LFI couple toute hausse de cotisation à une augmentation de salaire. L'exemple chiffré du livret est parlant : un salaire brut qui passe de 2 500 € à 2 550 € avec un point de cotisation vieillesse en plus laisse 2 071 € net, contre 2 056 € auparavant<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup> : tout le monde y gagne. Rappelons que le taux de cotisation vieillesse a déjà doublé depuis 1967, passant de 8,5 % à 17,75 %<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>, sans destruction massive d'emplois. À l'inverse, l'austérité défendue par les adversaires du programme réduit la consommation et détruit bien plus d'emplois que n'importe quelle hausse de cotisation négociée.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (« Cotiser plus et cotiser mieux », p. 33)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" }
+      ]
+    },
+    {
+      "label": "Espérance de vie",
+      "text": "On vit dix ans de plus qu'en 1970. Il est logique et juste de travailler plus longtemps en contrepartie.",
+      "counter": "L'espérance de vie en bonne santé stagne à 63 ans",
+      "response": "L'espérance de vie globale a progressé, mais l'espérance de vie en bonne santé stagne autour de 63 ans<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup> : repousser l'âge de départ, c'est condamner beaucoup de gens à travailler au-delà de leur santé. Les inégalités sont massives : 6 ans d'écart d'espérance de vie entre un cadre et un ouvrier, 13 ans entre les 5 % les plus riches et les 5 % les plus pauvres<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Et puisque la productivité a triplé depuis 1970 alors que les gains vont quasi exclusivement aux actionnaires, la vraie question n'est pas de savoir si l'on vit plus longtemps, mais à qui profite le surplus produit.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (« Une mesure inégalitaire », p. 14)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" }
+      ]
+    },
+    {
+      "label": "Isolement européen",
+      "text": "Aucun pays européen comparable n'a de retraite a 60 ans. La France serait isolée et moins compétitive.",
+      "counter": "La France a toujours été pionnière dans le progrès social",
+      "response": "La France a inventé la Sécurité sociale universelle en 1945 quand personne ne l'osait, et le résultat est mesurable : le taux de pauvreté des retraités est passé de 30 % en 1970 à 10 % aujourd'hui, l'un des plus faibles au monde<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup> (données OCDE). S'aligner sur les moins-disants sociaux n'est pas de la gouvernance, c'est une capitulation. Les pays qui dépensent moins en retraites publiques le font en s'appuyant sur la capitalisation privée — plus inégalitaire et exposée aux marchés financiers<sup class='cite'><a href='https://elucid.media/analyse-graphique/modele-social-francais' target='_blank' rel='noopener'>2</a></sup>. Ce modèle n'est pas à importer.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (p. 6-7)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" },
+        { "n": 2, "text": "Elucid — « Le modèle social français » (part publique des retraites et recours à la capitalisation selon les pays)", "url": "https://elucid.media/analyse-graphique/modele-social-francais" }
+      ]
+    },
+    {
+      "label": "Mur du déficit",
+      "text": "Le déficit de la branche vieillesse dépassera 25 milliards en 2030. Le mur est inévitable.",
+      "counter": "Ce déficit est construit politiquement, pas démographique",
+      "response": "Les comptes de la Sécurité sociale étaient équilibrés sous le gouvernement Jospin (1997-2002)<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Ils ont été déséquilibrés par les exonérations massives de cotisations patronales depuis 2002 — encore compensées par l'État à hauteur de 40 milliards par an en 2019, jusqu'à ce que Macron supprime cette compensation automatique, vidant délibérément les caisses pour justifier l'austérité<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>. Ce « mur » est une construction politique : rétablir la compensation suffit à retrouver des marges considérables. Rappelons enfin que la dette sociale ne représente que 9 % de la dette publique totale<sup class='cite'><a href='https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf' target='_blank' rel='noopener'>1</a></sup>.",
+      "sources": [
+        { "n": 1, "text": "Livret « Contre-projet retraites » — La France insoumise (p. 31 et 34)", "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/12/1.-LIVRET-ContreProjet-Retraite.pdf" }
+      ]
+    }
+  ]
+}

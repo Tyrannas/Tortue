@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Débattre de l'avenir en commun</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <span class="turtle-icon">&#x1F422;</span>
+  <div class="brand-text"><em>L'avenir</em> en commun</div>
+  <div class="hdr-sep"></div>
+  <div class="hdr-sub">Simulateur de débat</div>
+</header>
+
+<div id="screen-topics" class="screen active">
+  <div class="wrap">
+    <p class="page-eyebrow">Simulateur interactif</p>
+    <h1 class="page-title">Choisissez un sujet</h1>
+    <p class="page-sub">Endossez le role d'un sceptique sur la faisabilité du programme de l'avenir en commun. Sélectionnez les arguments un par un, dans l'ordre qui vous convient, jusqu'à les épuiser tous.</p>
+    <div class="topics-grid" id="topics-grid"></div>
+  </div>
+</div>
+
+<div id="screen-debate" class="screen">
+  <div class="wrap">
+    <div class="debate-topbar">
+      <div class="debate-heading">
+        <span id="dh-emoji"></span>
+        <span id="dh-name"></span>
+      </div>
+      <button class="btn-back" onclick="goTopics()">Sujets</button>
+    </div>
+    <div class="args-badge">
+      <div class="badge-dot"></div>
+      <span id="args-badge-text">9 arguments restants</span>
+    </div>
+    <div class="lfi-response" id="lfi-response">
+      <div class="resp-hdr">
+        <span class="resp-turtle">&#x1F422;</span>
+        <div>
+          <div class="resp-name">La Tortue</div>
+          <div class="resp-role">La Tortue répond</div>
+        </div>
+      </div>
+      <div class="resp-body">
+        <div class="resp-counter" id="resp-counter"></div>
+        <div class="resp-text"   id="resp-text"></div>
+        <div class="resp-sources" id="resp-sources"></div>
+      </div>
+    </div>
+    <button class="btn-continue" id="btn-continue" onclick="continueDebate()">Argument suivant</button>
+    <p class="debate-prompt" id="debate-prompt"></p>
+    <div class="args-list" id="args-list"></div>
+    <div class="end-message" id="end-message">
+      <span class="end-turtle">&#x1F422;</span>
+      <div class="end-title">Tous les arguments ont été abordés</div>
+      <p class="end-text" id="end-text"></p>
+      <div class="end-btns">
+        <button class="btn-replay" onclick="replayTopic()">Rejouer</button>
+        <button class="btn-other"  onclick="goTopics()">Autre sujet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

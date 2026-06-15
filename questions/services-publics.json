@@ -1,0 +1,63 @@
+{
+  "id": "services-publics",
+  "emoji": "🏥",
+  "name": "Services publics",
+  "desc": "LFI défend un investissement massif dans l'hôpital, l'école et les services essentiels.",
+  "endText": "LFI s'oppose à la logique austéritaire, pour une vision où l'investissement public est un levier de croissance et d'égalité. Le désaccord porte sur l'efficacité de la dépense publique et les marges de financement disponibles.",
+  "args": [
+    {
+      "label": "Niveau de dépenses",
+      "text": "La France dépense déjà 57 % du PIB en dépenses publiques, le record d'Europe. Il est impossible d'en rajouter.",
+      "counter": "Dépenser beaucoup ne veut pas dire dépenser bien",
+      "response": "Une large fraction de ces dépenses va à des niches fiscales, des exonérations patronales non conditionnées et des subventions sans contrepartie. Une commission sénatoriale a évalué à 211 milliards les aides aux entreprises souvent sans contrôle ni contrepartie. Réorienter ces sommes vers l'hôpital, l'école et les transports améliorerait le service rendu sans augmenter la dépense totale. Ce n'est pas une question de volume, c'est une question d'allocation politique."
+    },
+    {
+      "label": "Mauvaise gestion",
+      "text": "L'hopital public ne souffre pas de manque d'argent mais de bureaucratie et de mauvaise gestion structurelle.",
+      "counter": "La mauvaise gestion est une conséquence des coupes",
+      "response": "L'hopital public a perdu 100 000 lits depuis 30 ans. La tarification à l'acte (T2A) a transformé les soignants en producteurs de séjours facturables, détruisant le sens du métier et provoquant la crise de vocation observable aujourd'hui. Ce n'est pas de la mauvaise gestion intrinsèque : c'est le résultat prévisible de politiques qui ont contraint les hôpitaux à fonctionner comme des entreprises de rentabilité. La Cour des comptes elle-meme le documente."
+    },
+    {
+      "label": "Fuite des capitaux",
+      "text": "Augmenter les impots fera fuir les entreprises et les capitaux vers des pays plus compétitifs fiscalement.",
+      "counter": "L'exil fiscal est un mythe entretenu par les très riches",
+      "response": "Les etudes empiriques montrent que les entreprises s'installent là où se trouvent les marchés, les infrastructures et la main-d'œuvre qualifiée, pas uniquement là où les impôts sont bas. Les services publics français (transports, universités, santé) constituent un avantage compétitif réel. L'harmonisation fiscale européenne défendue par LFI rendrait par ailleurs l'évasion intra-européenne structurellement impossible."
+    },
+    {
+      "label": "La dette publique",
+      "text": "La dette publique dépasse 3 200 milliards d'euros. On ne peut absolument pas augmenter les dépenses dans ce contexte.",
+      "counter": "La dette n'est pas le problème qu'on vous présente",
+      "response": "La dette sociale ne représente que 9 % de la dette publique totale. Pendant dix ans, la BCE a rachete des milliers de milliards de dettes européennes sans déclencher d'hyperinflation. L'investissement public dans la sante, l'éducation et les transports génère des retours économiques qui dépassent leur coût initial. L'austérité réduit la croissance et donc les recettes fiscales, aggravant précisément le déficit qu'elle prétend réduire."
+    },
+    {
+      "label": "Privé plus efficace",
+      "text": "Le secteur privé gère mieux et moins cher les services. La concurrence bénéficie à l'usager.",
+      "counter": "Le privé transfère les coûts, il ne les supprime pas",
+      "response": "Les services essentiels (eau, énergie, santé) ne fonctionnent pas comme des marchés ordinaires : l'usager n'a pas le choix. Quand le privé reprend un service public, il garde les segments rentables et laisse les cas difficiles au public. C'est le phénomène d'écrémage. Resultat : prix plus élevés pour les usagers, service public appauvri. Les exemples britanniques de privatisation de l'eau et du rail illustrent parfaitement cet echec."
+    },
+    {
+      "label": "Trop de fonctionnaires",
+      "text": "Les fonctionnaires sont trop nombreux. Réduire les effectifs permettrait des économies substantielles.",
+      "counter": "On coupe là où on manque le plus de monde",
+      "response": "La France compte moins d'enseignants par élève que la moyenne OCDE en primaire. Les déserts médicaux touchent 11 millions de personnes. Les tribunaux accumulent des délais records. Les coupes dans la fonction publique ne font pas d'économies : elles transfèrent les coûts aux ménages et creusent les inégalités entre métropoles riches et périphéries délaissées."
+    },
+    {
+      "label": "Règles européennes",
+      "text": "L'UE impose des règles strictes de déficit (3 % du PIB) que LFI ne pourra pas contourner légalement.",
+      "counter": "Ces regles sont politiques, elles ont déjà été suspendues",
+      "response": "Le Pacte de Stabilité a été intégralement suspendu en 2020 lors du Covid, puis renégocié en 2024. Ces regles ne sont pas des lois de la nature : ce sont des choix politiques négociables. La BCE a montre qu'elle pouvait massivement financer les États quand la volonté politique existe. LFI propose de renégocier les traités et d'orienter les investissements publics vers la bifurcation écologique."
+    },
+    {
+      "label": "Assistanat",
+      "text": "Les dépenses sociales créent une dépendance à l'État qui décourage l'initiative et le retour au travail.",
+      "counter": "La pauvreté décourage le travail, pas les droits sociaux",
+      "response": "Les études sur le RSA et les minima sociaux montrent que la grande majorité des bénéficiaires préféreraient travailler si des emplois décents étaient disponibles. Ce qui décourage l'activité, c'est la précarité, les bas salaires et le sentiment que ça ne vaut pas le coup de travailler. Le programme LFI rend le travail attractif par le haut (SMIC à 1 600 euros, droits garantis) sans supprimer les filets de sécurité qui empêcher la misère."
+    },
+    {
+      "label": "Planification = soviétisme",
+      "text": "La planification etatique a échoué partout où elle a été tentée sérieusement dans l'histoire recente.",
+      "counter": "Les Trente Glorieuses françaises prouvent le contraire",
+      "response": "La planification industrielle française des Trente Glorieuses (EDF, TGV, nucleaire, Airbus) est un succès reconnu mondialement. L'Allemagne planifie son Energiewende. La Corée du Sud a planifié ses champions industriels. LFI propose une planification démocratique ciblée sur la transition écologique, pas une collectivisation. L'absence de planification, elle, a produit la désindustrialisation subie et le réchauffement climatique incontrôlé."
+    }
+  ]
+}

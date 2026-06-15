@@ -1,0 +1,63 @@
+{
+  "id": "ecologie",
+  "emoji": "🌱",
+  "name": "Planification écologique",
+  "desc": "LFI défend une bifurcation écologique planifiée par l'Etat pour répondre à l'urgence climatique.",
+  "endText": "LFI considère la planification écologique comme un impératif de survie et une opportunité économique. Ses adversaires craignent les coûts, les contraintes et l'efficacité de l'intervention étatique sur des marchés complexes.",
+  "args": [
+    {
+      "label": "Coût prohibitif",
+      "text": "La transition écologique coûte des centaines de milliards. Une facture totalement inabordable pour les finances publiques actuelles.",
+      "counter": "Ne pas agir coûtera infiniment plus cher",
+      "response": "Le rapport Stern et ses mises a jour montrent que l'inaction climatique coûte entre 5 et 20 % du PIB mondial par an a long terme, contre 1 a 2 % investis maintenant dans la transition. Les événements climatiques extrêmes coûtent déjà des dizaines de milliards par an a la France. La planification ecologique est un investissement productif : elle crée des emplois non délocalisables et réduit la dépendance aux énergies fossiles importées."
+    },
+    {
+      "label": "Compétitivité",
+      "text": "Durcir les normes environnementales va tuer la compétitivité des entreprises françaises face a la Chine ou aux Etats-Unis.",
+      "counter": "La compétitivité verte est l'avenir industriel",
+      "response": "L'Union europeenne adopte le mécanisme d'ajustement carbone aux frontières (MACF) : les produits importés de pays sans normes environnementales seront taxés à l'entrée. Les entreprises qui anticipent la transition dès maintenant seront mieux positionnées que celles qui attendent. La dépendance aux hydrocarbures importés (gaz russe, petrole du Golfe) est une faiblesse compétitive bien plus grave que des normes environnementales."
+    },
+    {
+      "label": "1 % des émissions",
+      "text": "La France n'émet que 1 % des émissions mondiales de CO2. Nos efforts n'auront aucun impact mesurable.",
+      "counter": "1 % des émissions, mais un effet d'entraînement mondial",
+      "response": "La France est la 7e puissance économique mondiale et membre permanent du Conseil de sécurité de l'ONU. Son influence diplomatique dépasse largement son poids carbone. L'Accord de Paris a été signé à Paris. Si chaque nation raisonnait en 1 % donc inaction, aucune transition ne serait jamais possible. Les technologies et entreprises francaises peuvent exporter des solutions vertes au reste du monde : c'est une opportunité industrielle majeure."
+    },
+    {
+      "label": "Destruction d'emplois",
+      "text": "La transition va détruire des centaines de milliers d'emplois dans l'automobile, l'industrie lourde et le BTP.",
+      "counter": "Elle en créera bien plus qu'elle n'en détruira",
+      "response": "LFI chiffre à plus d'un million les emplois créés par la planification ecologique : 400 000 dans les énergies renouvelables, 200 a 300 000 dans l'agriculture paysanne relocalisée, 200 000 dans l'économie de la mer, des centaines de milliers dans la rénovation thermique. Les emplois détruits doivent être accompagnés par des reconversions financées par l'État. La vraie destruction d'emplois industriels vient de 40 ans de désindustrialisation libérale, pas de la transition."
+    },
+    {
+      "label": "Restrictions de liberté",
+      "text": "LFI veut imposer des modes de vie décroissants qui priveraient les Français de liberté et de confort.",
+      "counter": "Mieux vivre n'est pas la même chose que consommer plus",
+      "response": "LFI ne prône pas l'austérité écologique mais la bifurcation : remplacer les biens polluants par leurs équivalents propres. Rouler en train rapide plutôt qu'en avion court-courrier, manger des aliments de qualité produits localement, habiter un logement bien isolé qui ne coûte rien a chauffer : c'est une vie meilleure, pas appauvrie. La véritable menace sur le mode de vie, ce sont les canicules, les inondations et l'inflation alimentaire causées par l'inaction."
+    },
+    {
+      "label": "Anti-nucléaire",
+      "text": "LFI s'oppose au nucléaire, pourtant la seule source d'énergie décarbonée et pilotable a grande echelle.",
+      "counter": "Le programme ne refuse pas le nucléaire existant",
+      "response": "LFI propose de prolonger les centrales existantes en bon état tout en accélérant massivement les renouvelables. Ce que le programme refuse, c'est de construire de nouveaux EPR dont les délais (15 à 20 ans) et les coûts (18 milliards à Flamanville) ne répondent pas à l'urgence climatique de la prochaine decennie. La France peut parfaitement viser un mix 70 a 80 % renouvelable et 20 a 30 % nucleaire existant d'ici 2050."
+    },
+    {
+      "label": "Le marché suffit",
+      "text": "La planification centralisée ne peut pas gérer efficacement une transition aussi complexe. Le marché libre s'en sort mieux.",
+      "counter": "Le marché seul a produit la crise climatique",
+      "response": "Depuis 40 ans, le marché libéral a eu tout le loisir de resoudre la crise climatique par lui-meme. Les émissions mondiales de CO2 ont augmenté chaque décennie. Le prix du carbone laissé au marché est structurellement trop faible pour changer les comportements industriels. La planification ecologique ne signifie pas gérer chaque investissement depuis Paris : elle fixe des objectifs contraignants et investit dans les infrastructures communes que le marché seul ne produira jamais."
+    },
+    {
+      "label": "Refus populaire",
+      "text": "Les citoyens ne sont pas prêts à changer leurs habitudes. Cette transition sera rejetée démocratiquement.",
+      "counter": "Les citoyens veulent de l'action, pas des tergiversations",
+      "response": "Les sondages montrent que 80 % des Français se déclarent préoccupés par le changement climatique. Ce que rejettent les citoyens, c'est l'écologie punitive qui fait payer les ménages modestes (taxe carbone sur les carburants) sans s'attaquer aux grandes entreprises polluantes. Le programme LFI propose une planification juste : les efforts portent sur ceux qui polluent le plus, pas sur ceux qui ne peuvent pas se payer une voiture électrique."
+    },
+    {
+      "label": "Sans accord mondial",
+      "text": "Sans accord international contraignant incluant la Chine et les USA, toute action française reste purement symbolique.",
+      "counter": "La France a les moyens de peser et de montrer l'exemple",
+      "response": "La France a co-négocié l'Accord de Paris de 2015. Elle préside des enceintes internationales (G7, COP) où ses positions influencent les grandes puissances. Le mécanisme carbone aux frontières européen (MACF) impose des normes aux pays exportateurs vers l'UE, y compris la Chine. Montrer qu'une grande economie peut prosperer tout en réduisant ses émissions est le meilleur argument diplomatique possible."
+    }
+  ]
+}
