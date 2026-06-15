@@ -114,7 +114,7 @@ function renderDebate() {
 
   $("debate-prompt").textContent =
     rem > 0
-    ? "Sélectionnez l'argument adverse de votre choix. La France Insoumise répondra."
+    ? "Sélectionnez l'argument adverse de votre choix. La Tortue y répondra."
     : "";
 
   $("args-list").innerHTML = rem === 0 ? "" :

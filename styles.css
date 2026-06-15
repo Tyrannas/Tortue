@@ -22,6 +22,14 @@ body {
   min-height: 100vh;
 }
 
+/* Emojis: même rendu (style Noto / Android) sur tous les OS, Windows compris.
+   Noto Color Emoji ne contient que des glyphes emoji, donc on peut l'appliquer
+   sans affecter le texte latin. Placée en fin de pile, elle ne sert que de
+   fallback pour les caractères absents des polices de texte. */
+.turtle-icon, .topic-emoji, #dh-emoji, .resp-turtle, .end-turtle {
+  font-family: "Noto Color Emoji", "Poppins", sans-serif;
+}
+
 /* HEADER */
 .site-header {
   background: var(--white);
@@ -297,9 +305,15 @@ body {
 }
 
 .resp-turtle {
-  font-size: 1.3rem;
-  filter: hue-rotate(180deg) saturate(2.2) brightness(1.4);
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  image-rendering: pixelated;
   flex-shrink: 0;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
 }
 
 .resp-name {
