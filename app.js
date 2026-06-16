@@ -101,23 +101,23 @@ function startTopic(i) {
 function renderDebate() {
   const topic = TOPICS[state.topicIdx];
   const rem   = state.remaining.length;
-  const total = topic.args.length;
 
   $("dh-emoji").textContent = topic.emoji;
   $("dh-name").textContent = topic.name;
-
-  const done = total - rem;
-  $("args-badge-text").textContent =
-    rem === 0
-    ? "Tous les arguments ont été abordés"
-    : `${rem} argument${rem > 1 ? "s" : ""} restant${rem > 1 ? "s" : ""} sur ${total}`;
 
   $("debate-prompt").textContent =
     rem > 0
     ? "Sélectionnez l'argument adverse de votre choix. La Tortue y répondra."
     : "";
 
-  $("args-list").innerHTML = rem === 0 ? "" :
+  // La réponse et le bouton « suivant » sont déplacés sous l'argument cliqué
+  // par selectArg ; on les ramène après la liste avant de la reconstruire,
+  // sinon innerHTML les supprimerait.
+  const argsList = $("args-list");
+  argsList.after($("btn-continue"));
+  argsList.after($("lfi-response"));
+
+  argsList.innerHTML = rem === 0 ? "" :
     state.remaining.map(idx => {
       const a = topic.args[idx];
       return `<button class="arg-btn" id="arg-${idx}" onclick="selectArg(${idx})">
@@ -180,12 +180,20 @@ function selectArg(idx) {
     editEl.style.display = "none";
   }
 
+  // Place la réponse (et le bouton « suivant ») juste sous l'argument cliqué.
+  const btn = $(`arg-${idx}`);
   const resp = $("lfi-response");
+  if (btn) {
+    btn.after($("btn-continue"));
+    btn.after(resp);
+  }
+
   resp.classList.remove("show");
   void resp.offsetWidth;
   resp.classList.add("show");
 
   $("btn-continue").classList.add("show");
+  resp.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 /* CONTINUE */
