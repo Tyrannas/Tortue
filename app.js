@@ -54,7 +54,7 @@ let state = { topicIdx: null, remaining: [], selected: null, answered: false };
 const $ = id => document.getElementById(id);
 
 function showScreen(name) {
-  ["topics","debate","about"].forEach(n => {
+  ["topics","debate","links","about"].forEach(n => {
     $("screen-" + n).classList.toggle("active", n === name);
   });
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -199,6 +199,7 @@ function continueDebate() {
 
 /* NAV */
 function goTopics()    { showScreen("topics"); }
+function goLinks()     { showScreen("links"); }
 function goAbout()     { showScreen("about"); }
 function replayTopic() { startTopic(state.topicIdx); }
 
@@ -258,6 +259,52 @@ function hostLabel(url) {
   catch (e) { return url; }
 }
 
+/* LIENS UTILES — cartes cliquables chargées depuis liens_utiles.json.
+   La miniature Open Graph est récupérée côté client via l'API publique
+   microlink.io ; à défaut d'image OG, on retombe sur le favicon du site. */
+function faviconUrl(url) {
+  return `https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(hostLabel(url))}`;
+}
+
+async function fetchOgImage(url) {
+  try {
+    const r = await fetch("https://api.microlink.io/?url=" + encodeURIComponent(url));
+    if (!r.ok) return null;
+    const j = await r.json();
+    return (j.status === "success" && j.data && j.data.image && j.data.image.url) || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+async function loadLinks() {
+  const links = await fetch("liens_utiles.json").then(r => r.json());
+  $("links-grid").innerHTML = links.map((l, i) =>
+    `<a class="link-card" href="${l.url}" target="_blank" rel="noopener">
+       <div class="link-thumb" id="link-thumb-${i}">
+         <img src="${faviconUrl(l.url)}" alt="" class="link-fallback-icon">
+       </div>
+       <div class="link-body">
+         <div class="link-label">${l.label}</div>
+         <div class="link-host">${hostLabel(l.url)}</div>
+       </div>
+     </a>`
+  ).join("");
+
+  // Récupère les miniatures Open Graph en parallèle, sans bloquer l'affichage.
+  links.forEach(async (l, i) => {
+    const img = await fetchOgImage(l.url);
+    if (!img) return;
+    const thumb = $(`link-thumb-${i}`);
+    if (!thumb) return;
+    const el = new Image();
+    el.alt = "";
+    el.className = "link-og-img";
+    el.onload = () => { thumb.innerHTML = ""; thumb.appendChild(el); thumb.classList.add("has-og"); };
+    el.src = img;
+  });
+}
+
 async function loadSources() {
   const urls = await fetch("sources.json").then(r => r.json());
   $("about-sources").innerHTML = urls.map(url =>
@@ -269,5 +316,6 @@ async function loadSources() {
 }
 
 loadTopics().then(openFromHash);
+loadLinks();
 loadSources();
 window.addEventListener("hashchange", openFromHash);
